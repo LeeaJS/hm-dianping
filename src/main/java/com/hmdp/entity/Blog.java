@@ -51,6 +51,19 @@ public class Blog implements Serializable {
     @TableField(exist = false)
     private String name;
 
+
+
+
+    /**
+     * 是否点赞
+     */
+    @TableField(exist = false)
+    private boolean isLike;
+
+    public void setIsLike(boolean like) {
+        isLike = like;
+    }
+
     /**
      * 标题
      */
@@ -85,6 +98,8 @@ public class Blog implements Serializable {
      * 更新时间
      */
     private LocalDateTime updateTime;
+
+
 
 
 }
